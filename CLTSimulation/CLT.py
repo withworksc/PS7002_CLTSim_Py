@@ -58,7 +58,7 @@ class CLTSample:
         elif self.Type == 2:
             distSample = np.median(sampleList)
         else:
-            distSample = np.quantiles(sampleList, self.P)
+            distSample = np.quantile(sampleList, self.P)
 
         return distSample
 
